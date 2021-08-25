@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23b1545cf438664e9ccee89f18ec123, type: 3}
+  m_Name: Ice
+  m_EditorClassIdentifier: 
+  planetRadius: 2.72
+  noiseLayers:
+  - enabled: 1
+    useFirstLayerAsMask: 0
+    planetShapeSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        planetStrength: 0.04
+        planetNumLayers: 3
+        planetBaseRoughness: 3.42
+        planetRoughness: 3.94
+        planetPersistence: 0.4
+        planetCentre: {x: 0.39, y: 0.39, z: 0.39}
+        planetMinValue: 0.8
+      ridgidNoiseSettings:
+        planetStrength: 0
+        planetNumLayers: 0
+        planetBaseRoughness: 0
+        planetRoughness: 0
+        planetPersistence: 0
+        planetCentre: {x: 0, y: 0, z: 0}
+        planetMinValue: 0
+        planetWeightMultiplier: 0
+  - enabled: 1
+    useFirstLayerAsMask: 1
+    planetShapeSettings:
+      filterType: 1
+      simpleNoiseSettings:
+        planetStrength: 0
+        planetNumLayers: 0
+        planetBaseRoughness: 0
+        planetRoughness: 0
+        planetPersistence: 0
+        planetCentre: {x: 0, y: 0, z: 0}
+        planetMinValue: 0
+      ridgidNoiseSettings:
+        planetStrength: 3
+        planetNumLayers: 4
+        planetBaseRoughness: 2
+        planetRoughness: 0.5
+        planetPersistence: 0.5
+        planetCentre: {x: 0, y: 0, z: 0}
+        planetMinValue: 0.5
+        planetWeightMultiplier: 0.8
